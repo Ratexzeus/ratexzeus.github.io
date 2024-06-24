@@ -38,6 +38,25 @@
     <link rel="stylesheet" href="style.css">
     <!-- Modernizr Js -->
     <script src="js/modernizr-2.8.3.min.js"></script>
+    <style>
+        /* CSS for making the iframe responsive */
+        .responsive-iframe-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #fff;
+        }
+        .responsive-iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -114,8 +133,6 @@
             </div>
         </div>
         <!-- Banner Area End Here -->
-        <!-- Slider Area Start Here -->
-        <!-- Slider Area End Here -->
         <!-- Project Review Area Start Here -->
         <div class="section-space-top">
             <div class="container">
@@ -136,35 +153,18 @@
         <!-- Google Form Embed Start Here -->
         <div class="section-space-top">
             <div class="container">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFvRrS-FfsDKLROsX2BtdJaWoJbORGYPSpqntuKsdDgevLuA/viewform?embedded=true" width="980" height="1944" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <div class="responsive-iframe-container">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFvRrS-FfsDKLROsX2BtdJaWoJbORGYPSpqntuKsdDgevLuA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
             </div>
         </div>
         <!-- Google Form Embed End Here -->
-        <!-- Page Change Area Start Here -->
-        <!-- <div class="section-space-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <div class="text-left">
-                            <a href="#" class="btn-bg-textprimary">Previous Project</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="text-right">
-                            <a href="#" class="btn-bg-textprimary">Next Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Page Change Area End Here -->
         <footer>
             <div class="footer-area-top accent-bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="footer-box">
-                                <!-- <h3 class="title-bar-footer">contact</h3> -->
                                 <ul class="corporate-address">
                                     <li>
                                         <i class="fa fa-phone" aria-hidden="true"></i>
@@ -202,7 +202,6 @@
                 </div>
             </div>
         </footer>
-        <!-- Footer Area End Here -->
     </div>
     <!-- Main Body Area End Here -->
     <!-- jquery-->
