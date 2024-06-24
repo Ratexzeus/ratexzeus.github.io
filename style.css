@@ -11134,7 +11134,7 @@ div ~ :last-child .features3-wrp-layout1 {
 [36] Footer Area
 =========================================================================*/
 .footer-area-top {
-  padding: 110px 0 80px;
+  padding: 42px 0 20px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .footer-area-top {
